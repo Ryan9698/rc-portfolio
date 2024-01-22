@@ -1,7 +1,18 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3",
     "react-scripts": "^5.0.1"
-  }
+  },
+  "name": "rc-portfolio",
+  "description": "Coding portfolio written in JavaScript/React",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
