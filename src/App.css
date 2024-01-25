@@ -83,6 +83,11 @@ body {
   background-color: black;
 }
 
+.form-control:focus {
+  border-color: red ; 
+  box-shadow: none; 
+}
+
 /* Cards for Portfolio */
 
 .card-image-container {
@@ -132,6 +137,78 @@ body {
 
 .card:hover .card-img-top {
   transform: scale(1.1); 
+}
+
+/* Resume button */
+
+.resBtn {
+  border: 2px solid red; 
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resBtn:hover, .resBtn:focus {
+  background-color: red; 
+  font-weight: bold;
+  color: black;
+}
+
+.skillsContainer {
+  margin-top: 20px; 
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.skillsList span {
+  background-color: red; 
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.skillsList span:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Styling */
+
+.siteFooter {
+  background-color: black; 
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: red; 
 }
 
 
