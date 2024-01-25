@@ -1,0 +1,225 @@
+/* General Web Page Styling */
+
+@font-face {
+  font-family: "Gruppo";
+  src: url("/Gruppo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Gruppo", cursive; /* Fallback to cursive if Gruppo isn't available */
+  color: white;
+}
+
+h1 {
+  font-family: "Gruppo", cursive; 
+  color: white;
+}
+
+body {
+  background-image: url("/sample3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Nav Component Styles */
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 14px;
+  font-family: "Gruppo", cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav .nav-item .nav-link {
+  padding: 0 1.25rem; 
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: lightgray;
+}
+
+.active {
+  color: red !important; 
+}
+
+/* About Component Styling */
+
+.aboutContainer {
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent  */
+  color: white; 
+  padding: 20px; 
+  border-radius: 10px; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+/* Form Styling */
+
+.formStyle {
+  background-color: black;
+}
+
+.form-control:focus {
+  border-color: red ; 
+  box-shadow: none; 
+}
+
+/* Cards for Portfolio */
+
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  max-height: 250px;
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px; 
+  transition: all 0.3s ease;
+}
+
+.card-title {
+  margin: 0; 
+}
+
+.card-description {
+  color: aliceblue;
+  background-color: #060505; 
+  transition: all 0.3s ease;
+  max-height: 100px; 
+  overflow: hidden;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.card:hover .card-description {
+  max-height: 500px; 
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); 
+}
+
+/* Resume button */
+
+.resBtn {
+  border: 2px solid red; 
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resBtn:hover, .resBtn:focus {
+  background-color: red; 
+  font-weight: bold;
+  color: black;
+}
+
+.skillsContainer {
+  margin-top: 20px; 
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.skillsList span {
+  background-color: red; 
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.skillsList span:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Styling */
+
+.siteFooter {
+  background-color: black; 
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: red; 
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 15px;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  .nav {
+    flex-direction: column;
+  }
+}
