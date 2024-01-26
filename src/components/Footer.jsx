@@ -1,5 +1,7 @@
 import React from "react";
 
+// Links to my different profiles
+
 export default function Footer() {
   return (
     <footer className="siteFooter mt-4">

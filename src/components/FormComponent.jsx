@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { Form, Button, FloatingLabel, Container, Row, Col } from "react-bootstrap";
+import { Form, FloatingLabel, Container, Row, Col } from "react-bootstrap";
+/* Function which sets states and changes states based on user input. If the user does not enter data and clicks off 
+an input field, the page will notify the user that they need to enter data. If the user does not enter an e-mail address in 
+the form of xyz@xyz, the page will notify the user to input a correct e-mail address. The fields will remove the warning
+once the conditions are met. */
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -16,17 +20,16 @@ function ContactForm() {
   };
 
   const isEmailValid = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!name || !isEmailValid(email) || !message) {
-      // Trigger validation
       setTouched({ name: true, email: true, message: true });
       return;
     }
-    // Here you would handle the form submission, like sending data to a server
   };
 
   return (
