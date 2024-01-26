@@ -7,7 +7,7 @@ import App from './App';
 import ErrorPage from "./pages/Error";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Portfolio from "./pages/portfolio";
+import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 
