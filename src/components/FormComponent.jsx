@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Form, FloatingLabel, Container, Row, Col } from "react-bootstrap";
 /* Function which sets states and changes states based on user input. If the user does not enter data and clicks off 

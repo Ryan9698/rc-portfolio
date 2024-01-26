@@ -42,6 +42,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ![aboutme](./assets/aboutme.png)
 ![portfolio](./assets/portfolio.png)
+![mobile_emulation](./assets/mobile.png)
 
 ## Questions
 
