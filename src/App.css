@@ -8,12 +8,22 @@
 }
 
 * {
-  font-family: "Gruppo", cursive; /* Fallback to cursive if Gruppo isn't available */
+  font-family: "Gruppo", cursive;
   color: white;
 }
 
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-grow {
+  flex: 1;
+}
+
 h1 {
-  font-family: "Gruppo", cursive; 
+  font-family: "Gruppo", cursive;
   color: white;
 }
 
@@ -49,7 +59,7 @@ body {
 }
 
 .nav .nav-item .nav-link {
-  padding: 0 1.25rem; 
+  padding: 0 1.25rem;
 }
 
 .nav-link {
@@ -62,19 +72,29 @@ body {
 }
 
 .active {
-  color: red !important; 
+  color: red !important;
 }
 
 /* About Component Styling */
 
+.about-avatar {
+  max-width: 80%;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.aboutContainer .row {
+  align-items: center;
+}
+
 .aboutContainer {
   background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent  */
-  color: white; 
-  padding: 20px; 
-  border-radius: 10px; 
-  max-width: 600px; 
-  margin: 0 auto; 
-  text-align: center; 
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Form Styling */
@@ -84,8 +104,8 @@ body {
 }
 
 .form-control:focus {
-  border-color: red ; 
-  box-shadow: none; 
+  border-color: red;
+  box-shadow: none;
 }
 
 /* Cards for Portfolio */
@@ -114,35 +134,52 @@ body {
   right: 0;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 10px; 
+  padding: 10px;
   transition: all 0.3s ease;
 }
 
 .card-title {
-  margin: 0; 
+  margin: 0;
 }
 
 .card-description {
   color: aliceblue;
-  background-color: #060505; 
+  background-color: #060505;
   transition: all 0.3s ease;
-  max-height: 100px; 
+  max-height: 100px;
   overflow: hidden;
   border-radius: 0px 0px 5px 5px;
 }
 
 .card:hover .card-description {
-  max-height: 500px; 
+  max-height: 500px;
 }
 
 .card:hover .card-img-top {
-  transform: scale(1.1); 
+  transform: scale(1.1);
+}
+
+/* Portfolio Styling */
+
+.github-link {
+  display: block;
+  margin-top: 10px;
+  color: red;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: white;
+}
+
+.github-link i {
+  margin-right: 5px;
 }
 
 /* Resume button */
 
 .resBtn {
-  border: 2px solid red; 
+  border: 2px solid red;
   background-color: transparent;
   color: white;
   padding: 10px 15px;
@@ -151,25 +188,26 @@ body {
   transition: all 0.3s ease;
 }
 
-.resBtn:hover, .resBtn:focus {
-  background-color: red; 
+.resBtn:hover,
+.resBtn:focus {
+  background-color: red;
   font-weight: bold;
   color: black;
 }
 
 .skillsContainer {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .skillsList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
-  gap: 10px; 
+  justify-content: center;
+  gap: 10px;
 }
 
 .skillsList span {
-  background-color: red; 
+  background-color: red;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -184,7 +222,7 @@ body {
 /* Footer Styling */
 
 .siteFooter {
-  background-color: black; 
+  background-color: black;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -208,9 +246,8 @@ body {
 }
 
 .footerLink:hover {
-  color: red; 
+  color: red;
 }
-
 
 @media (max-width: 768px) {
   .card {
@@ -221,5 +258,10 @@ body {
   }
   .nav {
     flex-direction: column;
+  }
+  .about-avatar {
+    max-width: 50%; 
+    display: block; 
+    margin: 0 auto 1rem; 
   }
 }

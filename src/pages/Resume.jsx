@@ -4,9 +4,10 @@ export default function Resume() {
   return (
     <div className="aboutContainer mt-4">
       <h1>Resume</h1>
-      <p>
-        Here's a summary of my technical proficiencies. For a detailed view, feel free to download my resume.
+      <p className="fs-5">
+        Here is a list of my technical proficiencies. For a detailed view, I have included a link to download my resume.
       </p>
+      {/* Download Button for Resume. Resume is stored in public folder */}
       <a href={resumeLink} download="resume.pdf" className="downloadButton">
         <button className="resBtn">Download Resume</button>
       </a>
