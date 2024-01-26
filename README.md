@@ -27,7 +27,8 @@ Using this project is straightforward. After entering the page, navigate the lin
 
 ## Contributors
 
-Canva image generator was used to create the image links and avatar
+Canva image generator was used to create the image links and avatar.
+Font was sourced from The Gruppo Project Authors (https://github.com/googlefonts/GruppoFont)
 
 ## License
 
