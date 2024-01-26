@@ -8,7 +8,7 @@ export default function Home() {
       <h1>Welcome!</h1>
       <p>
         This will be my landing page that I will utilize in the future when the project is
-        over. This page isn't intended to be part of my assignment.
+        over. This page is not intended to be part of my assignment.
       </p>
     </div>
   );
